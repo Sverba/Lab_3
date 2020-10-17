@@ -1,0 +1,38 @@
+﻿@model DTPReg.Models.Registration
+@{
+    ViewBag.Title = "Створити порушення";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Нове ДТП</h2>
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(model => model.PIP, "ПІП")
+    <br />
+    @Html.EditorFor(model => model.PIP)
+    <br /><br />
+    @Html.LabelFor(model => model.NPos, "Номер посвідчення")
+    <br />
+    @Html.EditorFor(model => model.NPos)
+    <br /><br />
+    @Html.LabelFor(model => model.Date_Birth, "Дата народження")
+    <br />
+    @Html.EditorFor(model => model.Date_Birth)
+    <br /><br />
+    @Html.LabelFor(model => model.Marka_Auto, "Марка автомобіля")
+    <br />
+    @Html.EditorFor(model => model.Marka_Auto)
+    <br /><br />
+    @Html.LabelFor(model => model.Nomer_Auto, "Номер автомобіля")
+    <br />
+    @Html.EditorFor(model => model.Nomer_Auto)
+    <br /><br />
+    @Html.LabelFor(model => model.Address, "Адреса порушення")
+    <br />
+    @Html.EditorFor(model => model.Address)
+    <br /><br />
+    @Html.LabelFor(model => model.Date_Por, "Дата порушення")
+    <br />
+    @Html.EditorFor(model => model.Date_Por)
+    <br /><br />
+    <input type="submit" value="Додати" />
+}

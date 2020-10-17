@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "Редагувати порушення";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model DTPReg.Models.Registration
+<h2>ДТП №@Model.Id</h2>
+@using (Html.BeginForm("EditReg", "Home", FormMethod.Post))
+{
+<fieldset>
+    @Html.HiddenFor(m => m.Id)
+    <p>
+        @Html.LabelFor(m => m.PIP, "ПІП")
+        <br />
+        @Html.EditorFor(m => m.PIP)
+    </p>
+    <p>
+        @Html.LabelFor(m => m.NPos, "Номер посвідчення")
+        <br />
+        @Html.EditorFor(m => m.NPos)
+    </p>
+    <p>
+        @Html.LabelFor(m => m.Date_Birth, "Дата народження")
+        <br />
+        @Html.EditorFor(m => m.Date_Birth)
+    </p>
+    <p>
+        @Html.LabelFor(m => m.Marka_Auto, "Марка автомобіля")
+        <br />
+        @Html.EditorFor(m => m.Marka_Auto)
+    </p>
+    <p>
+        @Html.LabelFor(m => m.Nomer_Auto, "Номер автомобіля")
+        <br />
+        @Html.EditorFor(m => m.Nomer_Auto)
+    </p>
+    <p>
+        @Html.LabelFor(m => m.Address, "Адреса порушення")
+        <br />
+        @Html.EditorFor(m => m.Address)
+    </p>
+    <p>
+        @Html.LabelFor(m => m.Date_Por, "Дата порушення")
+        <br />
+        @Html.EditorFor(m => m.Date_Por)
+    </p>
+    <p><input type="submit" value="Відправити" /></p>
+</fieldset>
+} 

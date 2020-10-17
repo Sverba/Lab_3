@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Видалити порушення";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model DTPReg.Models.Registration
+<h2>Видалення ДТП</h2>
+<dl>
+    <dt>ПІП</dt>
+    <dd>
+        @Html.DisplayFor(model => model.PIP)
+    </dd>
+    <dt>Номер посвідчення</dt>
+    <dd>
+        @Html.DisplayFor(model => model.NPos)
+    </dd>
+    <dt>Дата народження</dt>
+    <dd>
+        @Html.DisplayFor(model => model.Date_Birth)
+    </dd>
+    <dt>Марка автомобіля</dt>
+    <dd>
+        @Html.DisplayFor(model => model.Marka_Auto)
+    </dd>
+    <dt>Номер автомобіля</dt>
+    <dd>
+        @Html.DisplayFor(model => model.Nomer_Auto)
+    </dd>
+    <dt>Адреса порушення</dt>
+    <dd>
+        @Html.DisplayFor(model => model.Address)
+    </dd>
+    <dt>Дата порушення</dt>
+    <dd>
+        @Html.DisplayFor(model => model.Date_Por)
+    </dd>
+</dl>
+@using (Html.BeginForm())
+{
+    <input type="submit" value="Видалити" />
+}

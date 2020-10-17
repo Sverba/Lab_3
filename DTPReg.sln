@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTPReg", "DTPReg\DTPReg.csproj", "{EE51991D-5C0B-4AD3-8452-F65291AA4607}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE51991D-5C0B-4AD3-8452-F65291AA4607}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE51991D-5C0B-4AD3-8452-F65291AA4607}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE51991D-5C0B-4AD3-8452-F65291AA4607}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE51991D-5C0B-4AD3-8452-F65291AA4607}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F266B613-9D82-4EA4-9A29-CDB7F62A3E47}
+	EndGlobalSection
+EndGlobal

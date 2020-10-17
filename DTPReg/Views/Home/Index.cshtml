@@ -1,0 +1,36 @@
+﻿@model IEnumerable<DTPReg.Models.Registration>
+@{
+    ViewBag.Title = "ДТП";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div>
+    <h3>Порушники</h3>
+    <td><p><a href="/Home/Create/">Додати нове порушення</a></p></td>
+    <table>
+        <tr class="header">
+            <td><p>ПІП</p></td>
+            <td><p>Номер посвідчення</p></td>
+            <td><p>Дата народження</p></td>
+            <td><p>Марка автомобіля</p></td>
+            <td><p>Номер автомобіля</p></td>
+            <td><p>Адреса ДТП</p></td>
+            <td><p>Дата ДТП</p></td>
+            <td></td>
+        </tr>
+        @foreach (DTPReg.Models.Registration b in Model)
+        {
+        <tr>
+            <td><p>@b.PIP</p></td>
+            <td><p>@b.NPos</p></td>
+            <td><p>@b.Date_Birth</p></td>
+            <td><p>@b.Marka_Auto</p></td>
+            <td><p>@b.Nomer_Auto</p></td>
+            <td><p>@b.Address</p></td>
+            <td><p>@b.Date_Por</p></td>
+            <td><p><a href="/Home/RegView/@b.Id">Перегляд</a></p></td>
+            <td><p><a href="/Home/EditReg/@b.Id">Редагувати</a></p></td>
+            <td><p><a href="/Home/Delete/@b.Id">Видалити</a></p></td>
+        </tr>
+        }
+    </table>
+</div>
